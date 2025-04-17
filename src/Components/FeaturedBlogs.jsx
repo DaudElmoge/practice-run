@@ -1,6 +1,10 @@
 import React from "react";
 
-const FeaturedBlogs = ({ blog }) => {
+const FeaturedBlogs = ({ blog }) => {// This component is responsible for rendering the featured blog
+  // It takes in a blog object as a prop
+  // The component checks if the blog object is available
+  // If not, it returns a message indicating that there is no featured blog yet
+  // If the blog object is available, it renders the blog title and content
   if (!blog) {
     return (
       <p className="text-gray-500 text-center mt-4">No featured blog yet.</p>
