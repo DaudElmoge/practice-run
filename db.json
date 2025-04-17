@@ -3,27 +3,32 @@
     {
       "id": "1",
       "title": "My first blog",
-      "content": "This is the content of my first blog."
+      "content": "This is the content of my first blog.",
+      "image": "/images/blog1.webp"
     },
     {
       "id": "2",
       "title": "My second blog",
-      "content": "This is the content of my second blog."
+      "content": "This is the content of my second blog.",
+      "image": "/images/blog2.jpg"
     },
     {
       "id": "3",
       "title": "My third blog",
-      "content": "This is the content of my third blog."
+      "content": "This is the content of my third blog.",
+      "image": "/images/blog3.jpeg"
     },
     {
       "id": "9aed",
       "title": "react",
-      "content": "Blog project"
+      "content": "Blog project",
+      "image": "/images/blog4.jpg"
     },
     {
       "id": "af49",
       "title": "thursday",
-      "content": "fixed the issue"
+      "content": "fixed the issue",
+      "image": "/images/blog5.jpg"
     }
   ]
 }
