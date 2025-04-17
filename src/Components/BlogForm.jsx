@@ -9,7 +9,7 @@ const BlogForm = ({ onAddBlog }) => {
 
     const newBlog = { title, content };
 
-    fetch("http://localhost:3005/blogs", {
+    fetch("http://localhost:3000/blogs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,8 +26,11 @@ const BlogForm = ({ onAddBlog }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Add new blog</h3>
+    <form
+      onSubmit={handleSubmit}
+      className="bg-gray-100 p-6 rounded-2xl shadow"
+    >
+      <h3 className="text-lg font-bold mb-4 text-gray-700">Add new blog</h3>
 
       <input
         type="text"
@@ -35,6 +38,7 @@ const BlogForm = ({ onAddBlog }) => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
+        className="w-full px-3 py-2 mb-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
       />
       <br />
 
@@ -43,10 +47,16 @@ const BlogForm = ({ onAddBlog }) => {
         value={content}
         onChange={(e) => setContent(e.target.value)}
         required
+        className="w-full px-3 py-2 mb-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
       ></textarea>
       <br />
 
-      <button type="submit">Add blog</button>
+      <button
+        type="submit"
+        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+      >
+        Add blog
+      </button>
     </form>
   );
 };
